@@ -82,6 +82,10 @@ public class Customer {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", gender=" + gender +
+                ", customerType='" + customerType + '\'' +
+                ", color2='" + color2 + '\'' +
+                ", color='" + color + '\'' +
+                ", status=" + status +
                 '}';
     }
 }
