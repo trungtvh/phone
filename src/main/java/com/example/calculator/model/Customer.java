@@ -6,6 +6,7 @@ public class Customer {
     private boolean gender;
     private String customerType;
     private String color;
+    private boolean status;
 
     public Customer(int id) {
         this.id = id;
@@ -28,6 +29,14 @@ public class Customer {
 
     public String getName() {
         return name;
+    }
+
+    public boolean isStatus() {
+        return status;
+    }
+
+    public void setStatus(boolean status) {
+        this.status = status;
     }
 
     public void setName(String name) {
