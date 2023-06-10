@@ -5,8 +5,10 @@ public class Customer {
     private String name;
     private boolean gender;
     private String customerType;
+    private String color;
 
-    public Customer() {
+    public Customer(int id) {
+        this.id = id;
     }
 
     public Customer(int id, String name, boolean gender, String customerType) {
@@ -46,6 +48,14 @@ public class Customer {
 
     public void setCustomerType(String customerType) {
         this.customerType = customerType;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
     }
 
     @Override
