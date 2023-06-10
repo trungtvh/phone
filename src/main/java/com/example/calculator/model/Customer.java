@@ -6,8 +6,11 @@ public class Customer {
     private boolean gender;
     private String customerType;
     private String color2;
+    private String color;
+    private boolean status;
 
-    public Customer(int color2) {
+    public Customer(int id) {
+        this.id = id;
     }
 
     public Customer(int id, String name, boolean gender, String customerType) {
@@ -27,6 +30,14 @@ public class Customer {
 
     public String getName() {
         return name;
+    }
+
+    public boolean isStatus() {
+        return status;
+    }
+
+    public void setStatus(boolean status) {
+        this.status = status;
     }
 
     public void setName(String name) {
@@ -55,6 +66,14 @@ public class Customer {
 
     public void setColor2(String color2) {
         this.color2 = color2;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
     }
 
     @Override
