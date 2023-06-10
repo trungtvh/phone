@@ -5,8 +5,9 @@ public class Customer {
     private String name;
     private boolean gender;
     private String customerType;
+    private String color2;
 
-    public Customer() {
+    public Customer(int color2) {
     }
 
     public Customer(int id, String name, boolean gender, String customerType) {
@@ -46,6 +47,14 @@ public class Customer {
 
     public void setCustomerType(String customerType) {
         this.customerType = customerType;
+    }
+
+    public String getColor2() {
+        return color2;
+    }
+
+    public void setColor2(String color2) {
+        this.color2 = color2;
     }
 
     @Override
